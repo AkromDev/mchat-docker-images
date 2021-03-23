@@ -6,7 +6,7 @@ ENV REFRESHED_AT $REFRESHED_AT
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 RUN apt-get update &&  apt-get install curl -y
-RUN curl -sL https://deb.nodesource.com/setup_13.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 
 RUN apt-get update -qq && apt-get install -qq --no-install-recommends \
   nodejs \
